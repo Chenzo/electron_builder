@@ -1,0 +1,20 @@
+{
+  "name": "StreamTools",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "doapp": "electron .",
+    "buildApp": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "buildApp-win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds",    
+    "makeIcons" : "electron-icon-maker --input=./images/chenz_01.png --output=./assets"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^5.0.7",
+    "electron-builder": "^21.1.1",
+    "electron-icon-maker": "0.0.4",
+    "electron-packager": "^14.0.2"
+  }
+}
